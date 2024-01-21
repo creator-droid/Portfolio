@@ -346,6 +346,7 @@ span {
 .about-details-text {
   font-size: 1rem;
   color: whitesmoke;
+  text-align: center;
 }
 
 /* skills section */
