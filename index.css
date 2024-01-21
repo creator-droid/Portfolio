@@ -92,14 +92,7 @@ p {
   text-align: center;
   font-family: "Codystar", "Jacques Francois Shadow", cursive;
 }
-.more-about.subtitle {
-  position: relative;
-  font-size: 1rem;
-  color: whitesmoke;
-  margin: var(--mb-4) 0;
-  text-align: center;
-  font-family: "Codystar", "Jacques Francois Shadow", cursive;
-}
+
 .section-title::after {
   position: absolute;
   content: "";
@@ -342,8 +335,12 @@ span {
 }
 
 .about-details-heading {
-  font-size: 1.5rem;
+  position: relative;
+  font-size: 1rem;
+  color: whitesmoke;
   margin-bottom: 10px;
+  text-align: center;
+  font-family: "Codystar", "Jacques Francois Shadow", cursive;
 }
 
 .about-details-text {
