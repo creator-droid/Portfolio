@@ -373,6 +373,9 @@ span {
   border-radius: 8px;
   margin-right: 10px;
 }
+.pictures-container.show-more {
+  transform: translateX(-100%);
+}
 
 /* Media query for screens with a minimum width of 768 pixels */
 @media screen and (max-width: 768px) {

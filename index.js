@@ -37,3 +37,7 @@ scroll.reveal(".skills-img", { delay: 300 });
 // work reveal
 scroll.reveal(".work-img", {});
 
+document.getElementById("showMoreBtn").addEventListener("click", function () {
+  const picturesContainer = document.querySelector(".pictures-container");
+  picturesContainer.classList.toggle("show-more");
+});
