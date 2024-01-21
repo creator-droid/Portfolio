@@ -104,7 +104,6 @@ p {
   top: 2rem;
   background-color: black;
 }
-
 /* layout */
 .bg-grid {
   max-width: 1024px;
@@ -315,10 +314,6 @@ span {
   margin-bottom: var(--mb-4);
   font-size: 20px;
 }
-/* Add this styling to your existing CSS or create a new CSS file */
-.more-about {
-  /* Add any styling for the more-about section here */
-}
 
 .about-details-container {
   display: flex;
@@ -327,7 +322,7 @@ span {
 }
 
 .about-details-row {
-  flex-basis: calc(33.33% - 20px); /* Adjust as needed */
+  flex-basis: calc(33.33% - 20px);
   margin-bottom: 20px;
   padding: 20px;
   border: 1px dotted #ccc;
