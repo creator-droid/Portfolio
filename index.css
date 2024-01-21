@@ -312,11 +312,14 @@ span {
   margin-bottom: var(--mb-4);
   font-size: 20px;
 }
+.more-about {
+  padding: 80px 0;
+}
 
 .about-details-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .about-details-row {
@@ -340,6 +343,15 @@ span {
   font-size: 1rem;
   color: whitesmoke;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .more-about {
+    padding: 40px 0;
+  }
+
+  .about-details-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* skills section */
