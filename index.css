@@ -640,8 +640,8 @@ code {
     padding: 4rem 0;
   }
   .about-img {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: auto;
   }
   .about-img img {
     width: 165px;
