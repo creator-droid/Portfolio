@@ -41,14 +41,11 @@ scroll.reveal(".work-img", {});
 scroll.reveal(".contact-container", {});
 scroll.reveal(".social-container", { delay: 200 });
 
-let slideIndex = 0;
-
 function showSlides() {
-  let i;
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("dot");
 
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
 
@@ -58,17 +55,12 @@ function showSlides() {
     slideIndex = 1;
   }
 
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
   }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].classList.add("active");
 
-  setTimeout(showSlides, 3000); // Change slide every 3 seconds
+  setTimeout(showSlides, 3000);
 }
-
-// Run the slideshow when the page loads
-window.onload = function () {
-  showSlides();
-};
