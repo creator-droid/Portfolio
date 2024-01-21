@@ -375,7 +375,7 @@ span {
 }
 
 /* Media query for screens with a minimum width of 768 pixels */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .picture-item {
     width: 150px;
     height: 150px;
